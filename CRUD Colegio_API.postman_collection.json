@@ -1,0 +1,250 @@
+{
+	"info": {
+		"name": "CRUD Colegio",
+		"_postman_id": "7b2f6d3a-5f87-4df7-9e87-7d4b9c6542cd",
+		"description": "Colección CRUD para el sistema Colegio con Alumnos, Profesores, Cursos y Matrículas.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alumnos",
+			"item": [
+				{
+					"name": "Listar Alumnos",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/alumnos"
+					}
+				},
+				{
+					"name": "Obtener Alumno",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/alumnos/1"
+					}
+				},
+				{
+					"name": "Crear Alumno",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Juan Pérez\",\n    \"edad\": 20\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/alumnos"
+					}
+				},
+				{
+					"name": "Actualizar Alumno",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Juan Pérez Actualizado\",\n    \"edad\": 21\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/alumnos/1"
+					}
+				},
+				{
+					"name": "Eliminar Alumno",
+					"request": {
+						"method": "DELETE",
+						"url": "http://127.0.0.1:5001/api/alumnos/1"
+					}
+				}
+			]
+		},
+		{
+			"name": "Profesores",
+			"item": [
+				{
+					"name": "Listar Profesores",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/profesores"
+					}
+				},
+				{
+					"name": "Obtener Profesor",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/profesores/1"
+					}
+				},
+				{
+					"name": "Crear Profesor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"María López\",\n    \"especialidad\": \"Matemáticas\"\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/profesores"
+					}
+				},
+				{
+					"name": "Actualizar Profesor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"María López Actualizada\",\n    \"especialidad\": \"Física\"\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/profesores/1"
+					}
+				},
+				{
+					"name": "Eliminar Profesor",
+					"request": {
+						"method": "DELETE",
+						"url": "http://127.0.0.1:5001/api/profesores/1"
+					}
+				}
+			]
+		},
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "Listar Cursos",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/cursos"
+					}
+				},
+				{
+					"name": "Obtener Curso",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/cursos/1"
+					}
+				},
+				{
+					"name": "Crear Curso",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Matemáticas Básicas\",\n    \"duracion\": \"3 meses\"\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/cursos"
+					}
+				},
+				{
+					"name": "Actualizar Curso",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Matemáticas Avanzadas\",\n    \"duracion\": \"6 meses\"\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/cursos/1"
+					}
+				},
+				{
+					"name": "Eliminar Curso",
+					"request": {
+						"method": "DELETE",
+						"url": "http://127.0.0.1:5001/api/cursos/1"
+					}
+				}
+			]
+		},
+		{
+			"name": "Matrículas",
+			"item": [
+				{
+					"name": "Listar Matrículas",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/matriculas"
+					}
+				},
+				{
+					"name": "Obtener Matrícula",
+					"request": {
+						"method": "GET",
+						"url": "http://127.0.0.1:5001/api/matriculas/1"
+					}
+				},
+				{
+					"name": "Crear Matrícula",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_alumno\": 1,\n    \"id_curso\": 1\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/matriculas"
+					}
+				},
+				{
+					"name": "Actualizar Matrícula",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_alumno\": 1,\n    \"id_curso\": 2\n}"
+						},
+						"url": "http://127.0.0.1:5001/api/matriculas/1"
+					}
+				},
+				{
+					"name": "Eliminar Matrícula",
+					"request": {
+						"method": "DELETE",
+						"url": "http://127.0.0.1:5001/api/matriculas/1"
+					}
+				}
+			]
+		}
+	]
+}

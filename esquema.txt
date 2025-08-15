@@ -1,0 +1,29 @@
+crud_colegio/
+│── app.py
+│── config.py
+│── db.py
+│── requirements.txt
+│
+├── controller/
+│   ├── alumnos_controller.py
+│   ├── profesores_controller.py
+│   ├── cursos_controller.py
+│   ├── matriculas_controller.py
+│
+├── service/
+│   ├── alumnos_service.py
+│   ├── profesores_service.py
+│   ├── cursos_service.py
+│   ├── matriculas_service.py
+│
+├── repository/
+│   ├── alumnos_repository.py
+│   ├── profesores_repository.py
+│   ├── cursos_repository.py
+│   ├── matriculas_repository.py
+│
+└── dao/
+    ├── alumnos_dao.py
+    ├── profesores_dao.py
+    ├── cursos_dao.py
+    ├── matriculas_dao.py
